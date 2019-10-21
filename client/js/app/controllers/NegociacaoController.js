@@ -1,6 +1,20 @@
 class NegociacaoController{
-    adicona(event){
+
+    constructor(){
+
+        let $ = document.querySelector.bind(document);
+        this._inputData = $('#data');
+        this._inputQuantidade = $('#quantidade');
+        this._inputvalor = $('#valor');
+
+    }
+
+    adiciona(event){
+        
         event.preventDefault();
+
+        let data = new Date(this._inputData.value.replace(/-/g, ','));
+        console.log(data);
         
     }
 }
