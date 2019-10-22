@@ -2,8 +2,8 @@ class DateHelper{
 
     dataParaTexto(data){
         return data.getDate()
-        + '/' + (negociacao.data.getMonth() + 1)
-        + '/' + negociacao.data.getFullYear();
+        + '/' + (data.getMonth() + 1)
+        + '/' + data.getFullYear();
     }
 
     textoParaData(texto){
